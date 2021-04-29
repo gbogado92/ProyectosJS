@@ -3,6 +3,7 @@ const carrito = document.querySelector('#carrito');
 const listaCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCArrito = document.querySelector('#vaciar-carrito');
 const listaCursos = document.querySelector('#lista-cursos');
+let articulosCarrito = [];
 
 cargarEveventListeners();
 
@@ -24,7 +25,7 @@ function agregarCurso(e) {
 // Lee el contenido del HTML al que le dimos click y extrae la informacion del curso.
 
 function leerDatosCurso(curso){
-console.log(curso);
+// console.log(curso);
 
 // Crea un objeto con el contenido del curso actual.
 const infoCurso = {
@@ -34,7 +35,17 @@ const infoCurso = {
   id: curso.querySelector('a').getAttribute('data-id'),
   cantidad: 1
 }
-console.log(infoCurso);
+
+// Agrega elementos al arreglo de carrito
+
+articulosCarrito = [...articulosCarrito, infoCurso];
+
+console.log(articulosCarrito);
+
+}  
+
+// Muestra el carrito de compras en el HTML
+
+function carritoHTML() {
+  
 }
-
-

@@ -12,13 +12,13 @@ function cargarEventListeners() {
      // Dispara cuando se presiona "Agregar Carrito"
      listaCursos.addEventListener('click', agregarCurso);
 
-     // Cuando se elimina un curso del carrito
-     carrito.addEventListener('click', eliminarCurso);
+//      // Cuando se elimina un curso del carrito
+//      carrito.addEventListener('click', eliminarCurso);
 
-     // Al Vaciar el carrito
-     vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
+//      // Al Vaciar el carrito
+//      vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 
-}
+// }
 
 
 
